@@ -3,6 +3,8 @@ package com.sda.oop.person;
 import com.sda.oop.address.Address;
 import com.sda.oop.product.Product;
 
+import java.time.LocalDate;
+
 public class Person {
 
     private String name;
@@ -65,9 +67,15 @@ public class Person {
             System.out.println("Sorry, currently there is only  " + productToBuy.getStock() + " items of this product available.");
         }  else if (numberOfItems > 1) {
                 System.out.println(getName() + " has bought " + numberOfItems + " units of " + productToBuy.getProductName());
+            if (productToBuy.getExpirationDate().isBefore(LocalDate.now())) {
+                System.out.println("This product has expired on: " + productToBuy.getExpirationDate());
+            }
                 return numberOfItems;
             } else if (numberOfItems == 1) {
                 System.out.println(getName() + " has bought " + numberOfItems + " unit of " + productToBuy.getProductName());
+            if (productToBuy.getExpirationDate().isBefore(LocalDate.now())) {
+                System.out.println("This product has expired on: " + productToBuy.getExpirationDate());
+            }
                 return numberOfItems;
             }
         return 0;

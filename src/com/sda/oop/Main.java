@@ -4,6 +4,7 @@ import com.sda.oop.address.Address;
 import com.sda.oop.address.City;
 import com.sda.oop.address.Country;
 import com.sda.oop.person.Person;
+import com.sda.oop.product.Category;
 import com.sda.oop.product.Product;
 
 import java.time.LocalDate;
@@ -27,8 +28,12 @@ public class Main {
         address.setCity(city);
         address.setCountry(country);
 
-        Product product = new Product("Orange juice", 2.49, LocalDate.of(2020, Month.SEPTEMBER,10),20);
-        Product product1 = new Product("Orange juice", 2.49, LocalDate.of(2020, Month.SEPTEMBER,10),20);
+        Category groceries = new Category("Groceries");
+        Category electronics = new Category("Electronics");
+
+        Product product = new Product("Orange juice", 2.49, LocalDate.of(2010, Month.SEPTEMBER,10),20,groceries);
+        Product product2 = new Product("Cheese", 5.79, LocalDate.of(2020, Month.NOVEMBER,10),5,groceries);
+
 
         Person person = new Person();
         Person person1 = new Person("Pepito", "Pérez", 30, address);
