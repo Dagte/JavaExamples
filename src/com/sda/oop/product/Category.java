@@ -17,4 +17,9 @@ public class Category {
     public void setDepartment(final String department) {
         this.departmentName = department;
     }
+
+    @Override
+    public String toString() {
+        return "Category name: " + this.departmentName;
+          }
 }
