@@ -1,0 +1,8 @@
+Name, Model, Colour
+**********************
+BMW, 2010, BLUE
+MERCEDES, 2019, BLACK
+AUDI, 2000, GRAY
+BMW, 2014, RED
+MERCEDES, 2019, WHITE
+AUDI, 2000, GRAY

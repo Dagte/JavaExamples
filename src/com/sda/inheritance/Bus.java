@@ -1,7 +1,11 @@
 package com.sda.inheritance;
 
+import lombok.ToString;
+
 import java.math.BigDecimal;
 
+
+@ToString
 public class Bus extends  CarrierVehicle {
 
     private BigDecimal numberOfPassengers;
@@ -14,12 +18,5 @@ public class Bus extends  CarrierVehicle {
         this.numberOfPassengers = numberOfPassengers;
     }
 
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("This is a Bus{");
-        sb.append("numberOfPassengers=").append(numberOfPassengers);
-        sb.append('}');
-        sb.append(" This is a carrier Vehicle {" +  super.toString() + "}");
-        return sb.toString();
-    }
+
 }

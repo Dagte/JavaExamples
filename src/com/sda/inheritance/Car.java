@@ -1,5 +1,6 @@
 package com.sda.inheritance;
 
+
 public class Car extends CarrierVehicle {
 
     @Override
